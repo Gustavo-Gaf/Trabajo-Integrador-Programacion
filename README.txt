@@ -41,3 +41,11 @@ Clonar el repositorio.
 Asegurarse de tener el archivo PAISES.csv dentro de la carpeta data/.
 
 Ejecutar el archivo principal main.py ubicado en la carpeta /scr
+
+**Link repertorio Github**
+
+https://github.com/Gustavo-Gaf/Trabajo-Integrador-Programacion
+
+**Link video youtube**
+
+https://www.youtube.com/watch?v=9bQBspNvTRA
