@@ -1,0 +1,10 @@
+# Cache de Python (Archivos temporales de ejecución)
+__pycache__/
+*.pyc
+
+# Configuración propia de Visual Studio Code
+.vscode/
+
+# Archivos temporales del sistema operativo
+Thumbs.db
+.DS_Store
