@@ -1,43 +1,43 @@
 # Trabajo-Integrador-Programacion
 
-Sistema de GestiÛn de PaÌses en Python con arquitectura modular en 7 capas. Desarrollado para el Trabajo Practico Integrador de Programacion 1
+Sistema de Gesti√≥n de Pa√≠ses en Python con arquitectura modular en 7 capas. Desarrollado para el Trabajo Practico Integrador de Programacion 1
 
-**DescripciÛn del Proyecto:**
+**Descripci√≥n del Proyecto:**
 
-Este sistema permite la gestiÛn y el an·lisis de datos demogr·ficos y geogr·ficos de diferentes paÌses del mundo.
-A partir de un dataset inicial de fuentes confiables procesado en Excel, la aplicaciÛn realiza filtros personalizados, ordenamientos eficientes, b˙squedas especÌficas y reportes estadÌsticos avanzados.
+Este sistema permite la gesti√≥n y el an√°lisis de datos demogr√°ficos y geogr√°ficos de diferentes pa√≠ses del mundo.
+A partir de un dataset inicial de fuentes confiables procesado en Excel, la aplicaci√≥n realiza filtros personalizados, ordenamientos eficientes, b√∫squedas espec√≠ficas y reportes estad√≠sticos avanzados.
 
 
-**InstituciÛn:** Universidad TecnolÛgica Nacional (UTN) - Facultad Regional San Nicol·s
+**Instituci√≥n:** Universidad Tecnol√≥gica Nacional (UTN) - Facultad Regional San Nicol√°s
 
 **Alumno:** Flores Gustavo Ariel
 
-**ComisiÛn:** M26 (C1-24 - 1er Cuatrimestre)
+**Comisi√≥n:** M26 (C1-24 - 1er Cuatrimestre)
 
-**Profesores:** Ariel Enferrel, MartÌn A. GarcÌa, Cinthia Rigoni
+**Profesores:** Ariel Enferrel, Mart√≠n A. Garc√≠a, Cinthia Rigoni
 
 **Tutor:** Guada Maricchiolo
 
 **Estructura del Software (Arquitectura)**
 
-**main.py:** Orquestador principal y control del men˙ interactivo.
+**main.py:** Orquestador principal y control del men√∫ interactivo.
 
 **archivos.py:** Persistencia de datos (lectura y escritura en el CSV).
 
-**busqueda.py:** Alta de paÌses, actualizaciÛn de registros y b˙squeda por nombre.
+**busqueda.py:** Alta de pa√≠ses, actualizaci√≥n de registros y b√∫squeda por nombre.
 
-**estadistica.py:** C·lculo de valores extremos (m·ximos y mÌnimos) y promedios generales.
+**estadistica.py:** C√°lculo de valores extremos (m√°ximos y m√≠nimos) y promedios generales.
 
-**filtros.py:** B˙squedas personalizadas por continente, poblaciÛn o superficie.
+**filtros.py:** B√∫squedas personalizadas por continente, poblaci√≥n o superficie.
 
-**ordenamiento.py:** ReorganizaciÛn din·mica de tablas (ascendente/descendente y alfabÈtica).
+**ordenamiento.py:** Reorganizaci√≥n din√°mica de tablas (ascendente/descendente y alfab√©tica).
 
 **presentacion.py:** Capa visual experta en el formateo de tablas en consola.
 
-**CÛmo Ejecutar el Proyecto:**
+**C√≥mo Ejecutar el Proyecto:**
 
-1. Clonar el repositorio.
-   
-2. Asegurarse de tener el archivo `PAISES.csv` en la ruta correspondiente.
-   
-3. Ejecutar el archivo central desde la consola:
+Clonar el repositorio.
+
+Asegurarse de tener el archivo PAISES.csv dentro de la carpeta data/.
+
+Ejecutar el archivo principal main.py ubicado en la carpeta /scr desde la consola con el siguiente comando
