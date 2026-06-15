@@ -40,4 +40,4 @@ Clonar el repositorio.
 
 Asegurarse de tener el archivo PAISES.csv dentro de la carpeta data/.
 
-Ejecutar el archivo principal main.py ubicado en la carpeta /scr desde la consola con el siguiente comando
+Ejecutar el archivo principal main.py ubicado en la carpeta /scr
