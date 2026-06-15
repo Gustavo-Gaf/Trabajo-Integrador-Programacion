@@ -18,21 +18,38 @@ def opcion_agregar_pais(lista_paises):
     if not nombre:
         print("Error: No se permiten campos vacíos.")
         return
-    try:    #Se le pide al usuario que ingrese los datos y se capturan los datos invalidos y se imprime el error mediante except
+
+    try:
+        # 1. Validamos si el país ya existe ANTES de pedir los demás datos
+        # Usamos .lower() para que "Argentina" y "argentina" se consideren iguales
+        for pais in lista_paises:
+            if pais["nombre"].lower() == nombre.lower():
+                # Levantamos manualmente un ValueError con un mensaje personalizado
+                raise ValueError("El país ya se encuentra registrado.")
+
+        # Se le pide al usuario que ingrese los datos y se capturan los datos inválidos
         poblacion = int(input("Población (entero): "))
         superficie = int(input("Superficie en km² (entero): "))
+        
         if poblacion <= 0 or superficie <= 0:
             print("Error: Los valores deben ser mayores a cero.")
             return
-    except ValueError:
-        print("Error: Debe ingresar un número entero válido.")
+            
+    except ValueError as e:
+        # Si el error es por el país duplicado, 'e' contendrá el texto que pusimos en el raise
+        if str(e) == "El país ya se encuentra registrado.":
+            print(f"Error: {e}")
+        else:
+            # Si el error fue porque ingresaron letras en población o superficie
+            print("Error: Debe ingresar un número entero válido.")
         return
+
     continente = input("Continente: ").strip()
     if not continente:
         print("Error: No se permiten campos vacíos.")
         return
 
-    lista_paises.append({   #Se agrega el pais ingresado por el usuario al final de la lista
+    lista_paises.append({
         "nombre": nombre, "poblacion": poblacion, 
         "superficie": superficie, "continente": continente
     })
